@@ -11,9 +11,9 @@ namespace IoTDevices
     class Program
     {
         private static DeviceClient s_deviceClient;
-        private readonly static string s_myDeviceId = "irrigation-device-1";
-        private readonly static string s_iotHubUri = "iothub-irrigation.azure-devices.net";
-        private readonly static string s_deviceKey = "p3NqLQbQBrSU/mf5fBJTVghJ8ou6pmeZiXKzxyLQJYo=";
+        private readonly static string s_myDeviceId = "<my-device-id>";
+        private readonly static string s_iotHubUri = "<my-iothub-uri>.azure-devices.net";
+        private readonly static string s_deviceKey = "<my-device-key>";
         private static bool readTheFile = false;
 
         private static async Task Main()
@@ -105,6 +105,5 @@ namespace IoTDevices
                 await Task.Delay(1000);
             }
         }
-
     }
 }
